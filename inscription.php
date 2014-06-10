@@ -20,7 +20,7 @@ if(isset($_POST['submit'])) {
 	}
 	if(preg_match($motif,$_POST['username'])){
 		$formOK = false;
-		$errorName = "<p class='error'>Veuillez encoder votre vrai nom</p>";
+		$errorName = "<p class='error'>Votre nom d'utilisateur n'est pas valide</p>";
 	}
 	if(!preg_match($motif_mail,$_POST['mail'])){
 		$formOK = false;
