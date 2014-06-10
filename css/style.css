@@ -4373,7 +4373,6 @@ html.sb-static .sb-slidebar,
 	.recherche{
 	}
 	.recherche input[type="search"] {
-		height: 30px;
 		margin-top: 30px;
 	}
 	#domicile li.floatInput {
@@ -4532,6 +4531,9 @@ html.sb-static .sb-slidebar,
 	#header .rslides img {
 		top: -50px;
 	}
+
+
+
 }
 
 
