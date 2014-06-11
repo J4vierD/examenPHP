@@ -11,7 +11,6 @@
 	 }
 	 
 	 public function storeFormValues( $params ) {
-		//store the parameters
 		$this->__construct( $params ); 
 	 }
 	 
@@ -28,13 +27,13 @@
 			
 			$stmt->execute();
 			
-			$valid = $stmt->fetchAll(); // tous les utilisateurs correspondant à $username et $password sont stockés dans $valid.
+			$valid = $stmt->fetchAll(); 
              
 			if( $valid ) {
 				$success = true;
-                // J'ai stocké les infos dans la $_SESSION ici, comme ça on est sûr que le type a réussi à se connecter.
+                
                 $_SESSION['logged_in'] = "ok";
-                $_SESSION['username'] = $valid[0]['username']; // Le [0] sert à sélectionner le premier utilisateur correspondant. Théoriquement, il n'y en a de toute façon qu'un seul qui correspondant, mais on sait jamais.
+                $_SESSION['username'] = $valid[0]['username'];
 				$_SESSION['mail'] = $valid[0]['mail'];
 				$_SESSION['id'] = $valid[0]['id'];
 				$_SESSION['city'] = $valid[0]['city'];
@@ -63,7 +62,7 @@
 				$stmt->bindValue( "password", hash("sha256", $this->password . $this->salt), PDO::PARAM_STR );
 				$stmt->bindValue( "mail", $this->mail, PDO::PARAM_STR );
 				$stmt->execute();
-				//return "Registration Successful <br/> <a href='connexion.php'>Se connecter maintenant</a>";
+				
 			}catch( PDOException $e ) {
 				return $e->getMessage();
 			}
