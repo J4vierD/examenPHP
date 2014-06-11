@@ -99,7 +99,7 @@
 
 			<div class="editable"></div><!-- End editable-->
 
-			<label class="labelShow" for="annee">Situer votre histoire dans le temps</label>
+			<label class="labelShow" for="annee">Situez votre histoire dans le temps</label>
 			<input type="text"  maxlength="30" name="annee" placeholder="1989" id="annee">
 
 			<p>Ajouter des mots-clés :</p>
@@ -121,7 +121,7 @@
 			<input type="submit" class="btn" value="Search">
 		</div>
 
-		<a href="sucrerie.php" class="save ecrire">Raconter votre histoire</a>
+		<a href="sucrerie.php" class="save ecrire">Racontez votre histoire</a>
 	</form>
 	<div class="toShow" id="map"></div>
 </div> <!-- end localisation -->

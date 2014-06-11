@@ -247,7 +247,7 @@
 
 			<div class="editable"></div><!-- End editable-->
 
-			<label class="labelShow" for="annee">Situer votre histoire dans le temps</label>
+			<label class="labelShow" for="annee">Situez votre histoire dans le temps</label>
 			<input type="text"  maxlength="30" name="annee" placeholder="1989" id="annee">
 
 			<p>Ajouter des mots-clés :</p>
@@ -256,7 +256,7 @@
 			    <li>Genappe</li>
 			    <li>Sucrerie</li>
 			</ul>
-			<input type="submit" id="saveStory" name="saveStory" value="Raconter votre histoire">
+			<input type="submit" id="saveStory" name="saveStory" value="Racontez votre histoire">
 		</form><!-- end div wysi-->
 
 		<div id="nextStory">
